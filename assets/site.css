@@ -273,3 +273,12 @@ a.more,.more{display:inline-flex;align-items:center;gap:6px;font-weight:500;colo
   .hero .wrap{padding-top:36px;padding-bottom:48px}
   .hero-copy{max-width:none}
 }
+
+/* Page headers with a photo: copy left, photo takes the right 42% */
+.band-grid{display:block}
+.band.has-photo .band-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.band.has-photo .band-copy{max-width:none;padding-top:8px}
+.band.has-photo .band-photo{margin:0}
+.band.has-photo .band-photo img{aspect-ratio:4/5;max-height:560px;object-fit:cover;width:100%}
+@media(max-width:900px){.band.has-photo .band-grid{grid-template-columns:1fr;gap:28px}.band.has-photo .band-photo{order:-1}.band.has-photo .band-photo img{aspect-ratio:4/3}}
+.band.has-photo .band-photo img{object-position:50% 40%}
