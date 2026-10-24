@@ -258,7 +258,8 @@ a.more,.more{display:inline-flex;align-items:center;gap:6px;font-weight:500;colo
 .hero::after{display:none}
 .hero-photo{position:absolute;inset:0;margin:0}
 .hero-photo picture{display:block;height:100%}
-.hero-photo img{position:absolute;top:0;right:-3vw;height:91%;width:auto;max-width:none;aspect-ratio:3/2;object-fit:cover;border-radius:0;box-shadow:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,#000 90%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,#000 90%,transparent 100%);mask-composite:intersect}
+.hero-photo img{position:absolute;top:0;left:62%;transform:translateX(-40%);height:91%;width:auto;max-width:none;aspect-ratio:1.92/1;object-fit:cover;border-radius:0;box-shadow:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,#000 90%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 24%),linear-gradient(180deg,#000 90%,transparent 100%);mask-composite:intersect}
+@media(min-width:2000px){.hero-photo img{left:auto;right:0;transform:none}}
 .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,20,20,.9) 0,rgba(20,20,20,.72) 30%,rgba(20,20,20,.2) 52%,rgba(20,20,20,0) 66%)}
 .hero .wrap{width:100%;padding-top:72px;padding-bottom:72px}
 .hero-copy{text-align:left;margin:0;max-width:520px}
@@ -268,7 +269,7 @@ a.more,.more{display:inline-flex;align-items:center;gap:6px;font-weight:500;colo
 @media(max-width:900px){
   .hero{display:block;min-height:0;padding:0}
   .hero-photo{position:static}
-  .hero-photo img{position:static;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:60% 25%;-webkit-mask-image:none;mask-image:none;-webkit-mask-composite:initial;mask-composite:initial}
+  .hero-photo img{position:static;transform:none;left:auto;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:60% 25%;-webkit-mask-image:none;mask-image:none;-webkit-mask-composite:initial;mask-composite:initial}
   .hero-photo::after{display:none}
   .hero .wrap{padding-top:36px;padding-bottom:48px}
   .hero-copy{max-width:none}
