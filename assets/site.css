@@ -286,3 +286,7 @@ a.more,.more{display:inline-flex;align-items:center;gap:6px;font-weight:500;colo
 .band-photo img[src*="life-patient"]{object-position:66% 40%}
 .band-photo img[src*="life-park"]{object-position:72% 40%}
 .band-photo img[src*="life-hike"]{object-position:62% 40%}
+
+/* Online booking */
+.book-widget{text-align:center;padding:28px 20px;border:1px solid rgba(0,0,0,.12);border-radius:14px}
+.book-widget p{margin:0 0 16px}

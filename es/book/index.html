@@ -38,24 +38,7 @@
 </header>
 <main id="main">
 <section class="band"><div class="wrap"><nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="/es/">Inicio</a></li><li aria-current="page">Reserve en línea</li></ol></nav><div class="band-copy"><p class="eyebrow">Dawson Dentistry · St. George, UT</p><h1>Reserve su cita en línea</h1><p class="band-sub">Elija el día y la hora que mejor le convengan. Solo toma un minuto.</p></div></div></section>
-<section class="sec"><div class="wrap narrow"><div id="online-booking" class="book-widget"></div><div class="cards" style="margin-top:32px"><div class="card"><h3>¿Prefiere hablar con alguien?</h3><p>Llámenos en horario de oficina y juntos encontraremos un horario.</p><a class="more" href="tel:+14356561111">(435) 656-1111 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 11.8 6.7l4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a></div><div class="card"><h3>¿Prefiere enviar una solicitud?</h3><p>Díganos qué necesita y le llamaremos para programar su cita.</p><a class="more" href="/es/contact/#request">Enviar una solicitud <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 11.8 6.7l4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a></div></div></div></section>
-<script>
-  if(!document.getElementById('diWidgetScript')) {
-    const diScript = document.createElement('script');
-    diScript.setAttribute('crossorigin', 'anonymous');
-    diScript.setAttribute('src', 'https://front-end-assets.azureedge.net/scripts/osWidget.js');
-    diScript.setAttribute('defer', 'true');
-    diScript.setAttribute('id', 'diWidgetScript');
-    document.body.appendChild(diScript);
-  }
-  if (!window.osWidgetsArr) {
-    window.osWidgetsArr = [];
-  }
-  window.osWidgetsArr.push({
-    apiUrl:
-      "https://api.modento.io/api/v1/online-schedule-widgets/bb1237c3271d4b01b8f33dd185329b64",
-  });
-</script>
+<section class="sec"><div class="wrap narrow"><div id="online-booking" class="book-widget"><p>El programador se abre en esta página. Si lo cerró, ábralo de nuevo aquí.</p><a class="btn btn-book" data-book href="https://book.modento.io/c/88c4c0ab4f394d04abe9612c37eb7cdf/Dawson-Dentistry?from_widget=bb1237c3271d4b01b8f33dd185329b64" rel="noopener">Abrir el programador</a></div><div class="cards" style="margin-top:32px"><div class="card"><h3>¿Prefiere hablar con alguien?</h3><p>Llámenos en horario de oficina y juntos encontraremos un horario.</p><a class="more" href="tel:+14356561111">(435) 656-1111 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 11.8 6.7l4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a></div><div class="card"><h3>¿Prefiere enviar una solicitud?</h3><p>Díganos qué necesita y le llamaremos para programar su cita.</p><a class="more" href="/es/contact/#request">Enviar una solicitud <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 11.8 6.7l4.3 4.3H4v2h12.1l-4.3 4.3 1.4 1.4L20 12z"/></svg></a></div></div></div></section>
 </main>
 <footer class="foot">
 <div class="wrap foot-big"><h2>Listos cuando usted lo esté.</h2><p>Envíe una solicitud de cita en aproximadamente un minuto, o llámenos y le ayudaremos a encontrar un horario.</p>
@@ -76,5 +59,7 @@ if((w>=1&&w<=4&&m>=480&&m<1020)||(w===5&&m>=480&&m<720)){o=true;t=es?'Abierto ah
 else{t=es?'Cerrado ahora · solicite una cita en línea':'Closed now · request a visit online';}
 e.forEach(function(x){x.querySelector('span').textContent=t;x.classList.toggle('is-open',o);});})();</script>
 <script data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="68b86a96f25bb4a20a7a2876" src="https://widgets.leadconnectorhq.com/loader.js"></script>
+<script src="/assets/book.js" defer></script>
+<script>(function(){var n=0;(function t(){if(window.dawsonOpenBooking&&window.dawsonOpenBooking())return;if(++n<100)setTimeout(t,150);})();})();</script>
 </body>
 </html>
