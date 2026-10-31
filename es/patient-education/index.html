@@ -87,7 +87,12 @@ var d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Denver'})),w
 if((w>=1&&w<=4&&m>=480&&m<1020)||(w===5&&m>=480&&m<720)){o=true;t=es?'Abierto ahora':'Open now';}
 else{t=es?'Cerrado ahora · solicite una cita en línea':'Closed now · request a visit online';}
 e.forEach(function(x){x.querySelector('span').textContent=t;x.classList.toggle('is-open',o);});})();</script>
-<script data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="68b86a96f25bb4a20a7a2876" src="https://widgets.leadconnectorhq.com/loader.js"></script>
+<script type="text/elevate-delay" data-delay-src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="68b86a96f25bb4a20a7a2876" ></script>
 <script src="/assets/book.js" defer></script>
-</body>
+<script data-elevate-perf>(function(){var done=false;function go(){if(done)return;done=true;
+document.querySelectorAll('script[type="text/elevate-delay"]').forEach(function(o){var s=document.createElement('script');
+for(var i=0;i<o.attributes.length;i++){var a=o.attributes[i];if(a.name==='type')continue;s.setAttribute(a.name==='data-delay-src'?'src':a.name,a.value)}
+s.async=false;o.parentNode.replaceChild(s,o)})}
+['scroll','pointerdown','keydown','touchstart','mousemove'].forEach(function(e){addEventListener(e,go,{once:true,passive:true})});
+addEventListener('load',function(){setTimeout(go,6000)})})();</script></body>
 </html>
